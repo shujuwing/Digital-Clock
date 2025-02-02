@@ -14,7 +14,7 @@
 
 .title{
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 15rem;
     
 }
 
@@ -96,4 +96,32 @@
 
 #sec::after{
     content: 'Second';
+}
+
+
+
+@media screen and (max-width:920px){
+    .container::after{
+        content: '';
+        width: 0px;
+        height: 0px;
+       
+    }
+    .container::before{
+        content: '';
+        width: 0px;
+        height: 0px;
+        
+    }
+
+    .container{
+        width: 350px;
+    }
+
+    .clock{
+        width: 350px;
+        padding: 25px;
+       
+    }
+
 }
